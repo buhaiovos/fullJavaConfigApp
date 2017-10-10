@@ -4,7 +4,7 @@ public class Answer {
 
     private Question question;
     private Expert expert;
-    private Interval asnwerInterwal;
+    private Interval interval;
 
     public Answer() {
     }
@@ -12,7 +12,7 @@ public class Answer {
     public Answer(Question question, Expert expert, Interval asnwerInterwal) {
         this.question = question;
         this.expert = expert;
-        this.asnwerInterwal = asnwerInterwal;
+        this.interval = asnwerInterwal;
     }
 
     public Question getQuestion() {
@@ -23,12 +23,12 @@ public class Answer {
         this.question = question;
     }
 
-    public Interval getAsnwerInterwal() {
-        return asnwerInterwal;
+    public Interval getInterval() {
+        return interval;
     }
 
-    public void setAsnwerInterwal(Interval asnwerInterwal) {
-        this.asnwerInterwal = asnwerInterwal;
+    public void setInterval(Interval interval) {
+        this.interval = interval;
     }
 
     public Expert getExpert() {

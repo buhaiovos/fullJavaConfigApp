@@ -11,6 +11,7 @@
         <spring.version>4.3.11.RELEASE</spring.version>
         <jstl.version>1.2</jstl.version>
         <jetty.version>9.4.8</jetty.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -26,6 +27,14 @@
             <version>3.1.0</version>
             <scope>compile</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>javax.servlet</groupId>

@@ -36,10 +36,10 @@ public class W {
     }
 
     private double calculateValue(Answer answer) {
-        Interval interval = answer.getAsnwerInterwal();
+        Interval interval = answer.getInterval();
         return applyFormula(
                 interval.getAlpha(), interval.getBeta(),
-                interval.getmLow(), interval.getmHigh(),
+                interval.getMLow(), interval.getMHigh(),
                 interval.getH()
         );
     }

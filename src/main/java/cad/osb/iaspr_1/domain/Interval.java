@@ -1,5 +1,8 @@
 package cad.osb.iaspr_1.domain;
 
+import lombok.Data;
+
+@Data
 public class Interval {
 
     private double alpha;
@@ -19,43 +22,4 @@ public class Interval {
         this.h = h;
     }
 
-    public double getAlpha() {
-        return alpha;
-    }
-
-    public void setAlpha(double alpha) {
-        this.alpha = alpha;
-    }
-
-    public double getBeta() {
-        return beta;
-    }
-
-    public void setBeta(double beta) {
-        this.beta = beta;
-    }
-
-    public double getmLow() {
-        return mLow;
-    }
-
-    public void setmLow(double mLow) {
-        this.mLow = mLow;
-    }
-
-    public double getmHigh() {
-        return mHigh;
-    }
-
-    public void setmHigh(double mHigh) {
-        this.mHigh = mHigh;
-    }
-
-    public double getH() {
-        return h;
-    }
-
-    public void setH(double h) {
-        this.h = h;
-    }
 }

@@ -1,13 +1,12 @@
 package cad.osb.iaspr_1.webconfig;
 
-import cad.osb.iaspr_1.rootconfig.RepoConfig;
-import cad.osb.iaspr_1.rootconfig.ServiceConfig;
+import cad.osb.iaspr_1.rootconfigs.RepoConfig;
+import cad.osb.iaspr_1.rootconfigs.ServiceConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
