@@ -1,10 +1,8 @@
 package cad.osb.iaspr_1.services;
 
 import cad.osb.iaspr_1.domain.Answer;
-import cad.osb.iaspr_1.domain.Expert;
 import cad.osb.iaspr_1.domain.Interval;
 import cad.osb.iaspr_1.domain.Question;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +10,7 @@ import java.util.List;
 public class AnswerServiceImpl implements AnswerService {
 
     private QuestioningService questioningService;
-    private List<List<Answer>> answersOrder = new ArrayList<>();
+    private List<List<Answer>> answersListsOrderedByExpertId = new ArrayList<>();
 
     public AnswerServiceImpl(QuestioningService questioningService) {
         this.questioningService = questioningService;
@@ -32,7 +30,13 @@ public class AnswerServiceImpl implements AnswerService {
     }
 
     @Override
+    public List<List<Answer>> getAnswersListsOrderedByExpertId() {
+        return answersListsOrderedByExpertId;
+    }
+
+    @Override
     public synchronized void saveAnswers(List<Answer> answers) {
-        answersOrder.add(answers);
+        System.out.println("Saving : " + answers.toString());
+        answersListsOrderedByExpertId.add(answers);
     }
 }

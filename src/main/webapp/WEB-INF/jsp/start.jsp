@@ -4,8 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Конец опроса</title>
+<title>Начало</title>
 <body>
-    Спасибо! Ваш номер # ${expertId}. Не забудьте сообщить его ОПР.
+    <a href="questioning">Ответить на вопросы</a>
+    <a href="results/start">Страница ОПР</a>
 </body>
 </html>

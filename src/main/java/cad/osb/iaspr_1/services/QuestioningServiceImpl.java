@@ -17,4 +17,9 @@ public class QuestioningServiceImpl implements QuestioningService {
     public List<Question> getAllQuestions() {
         return questionRepository.allQuestions();
     }
+
+    @Override
+    public int getQuestionsNum() {
+        return questionRepository.allQuestions().size();
+    }
 }

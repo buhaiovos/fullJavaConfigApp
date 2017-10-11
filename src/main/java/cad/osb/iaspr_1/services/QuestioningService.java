@@ -6,5 +6,6 @@ import cad.osb.iaspr_1.domain.Question;
 import java.util.List;
 
 public interface QuestioningService {
-    public List<Question> getAllQuestions();
+    List<Question> getAllQuestions();
+    int getQuestionsNum();
 }

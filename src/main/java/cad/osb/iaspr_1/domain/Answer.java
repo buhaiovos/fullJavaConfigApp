@@ -1,5 +1,8 @@
 package cad.osb.iaspr_1.domain;
 
+import lombok.ToString;
+
+@ToString
 public class Answer {
 
     private Question question;

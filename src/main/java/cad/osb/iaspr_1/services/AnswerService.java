@@ -7,5 +7,6 @@ import java.util.List;
 
 public interface AnswerService {
     List<Answer> getEmptyAnswers();
+    List<List<Answer>> getAnswersListsOrderedByExpertId();
     void saveAnswers(List<Answer> answers);
 }
